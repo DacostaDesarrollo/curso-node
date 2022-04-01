@@ -5,11 +5,16 @@ const dbConnect = require('./config/mongo');
 const app = express();
 
 app.use(cors());
-
+app.use(express.json());
 const port = process.env.PORT | 3000;
 
+/**
+ * Aqui invocamos a las rutas
+ */
+//TODO:localhost/api/
+app.use("/api", require("./routes"));
 
 dbConnect(); 
 app.listen(port, ()=>{
-    console.log(`Tu app esta lista por localhots:${port}`);
+    console.log(`Tu app esta lista por localhost:${port}`);
 });

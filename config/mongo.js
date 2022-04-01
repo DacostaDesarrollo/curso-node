@@ -7,8 +7,6 @@ const dbConnect = ()=>{
         useNewUrlParser:true,
         useUnifiedTopology:true
     },(err,res)=>{
-    console.log("hola");
-
         if (!err) {
             console.log('*** C0NEXIÓN CORRECTA ***');
         }else{

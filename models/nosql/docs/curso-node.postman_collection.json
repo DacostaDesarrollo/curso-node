@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "4e883e3d-e3ea-4098-99d5-d405c9bc92a5",
+		"name": "curso-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tracks",
+			"item": []
+		},
+		{
+			"name": "listar items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/tracks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Eminem - Without Me (Official Music Video)\",\r\n    \"album\":\"Eminem\",\r\n    \"cover\":\"https://cdns-images.dzcdn.net/images/cover/ec3c8ed67427064c70f67e5815b74cef/350x350.jpg\",\r\n    \"artist\":{\r\n        \"name\":\"Eminem\",\r\n        \"nickname\":\"Eminem\",\r\n        \"nationality\":\"US\"\r\n    },\r\n    \"duration\":{\r\n        \"start\":1,\r\n        \"end\":0\r\n    },\r\n    \"mediaId\":\"62271512ee5081a7027e636a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/tracks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
